@@ -31,7 +31,11 @@
             font-size: 1.5em;
             margin-bottom: 10px;
         }
-        .head{
+        .head {
+            background-color: blue;
+            color: white;
+        }
+        .time-header {
             background-color: blue;
             color: white;
         }
@@ -43,12 +47,19 @@
         <caption>Bus Sewa Time Table and Fare List</caption>
         <thead>
             <tr class="head">
-                <th>Name of Bus</th>
-                <th>Place</th>
-                <th>Destination</th>
-                <th>Arrival Time</th>
-                <th>Departure Time</th>
-                <th>Fare</th>
+                <th scope="col">Name of Bus</th>
+                <th scope="col">Place</th>
+                <th scope="col">Destination</th>
+                <th scope="col" colspan="2">Time</th>
+                <th scope="col">Fare</th>
+            </tr>
+            <tr class="time-header">
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Arrival</th>
+                <th scope="col">Departure</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
@@ -97,3 +108,4 @@
 
 </body>
 </html>
+
