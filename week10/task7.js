@@ -6,7 +6,7 @@ document.write(
 document.write(
   "<tr style='background-color:blue; color:white; font-weight:bold; border:2px solid white;'>"
 );
-document.write("<th style='border:2px solid white;'>S.N</th>");
+document.write("<th style='border:2px solid white;'>S.N.</th>");
 document.write("<th style='border:2px solid white;'>Name</th>");
 document.write("<th style='border:2px solid white;'>Image</th>");
 document.write('</tr>');
