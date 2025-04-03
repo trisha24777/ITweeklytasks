@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout Outline</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        nav ul {
+            list-style-type: none;
+
+            display: flex;
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border: 3px solid #000000;
+        }
+
+
+        main {
+            padding: 20px;
+        }
+
+        #who-we-work-with {
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+        grid-gap: 20px; /* Spacing between grid items */
+    }
+
+    .client {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex; /* Enable Flexbox */
+    align-items: center; /* Vertical alignment */
+}
+
+.company-logo {
+    height: 50px;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.text {
+    width: 70%;
+    margin-left: 10%; /* Text occupies remaining 70% width */
+}
+
+        #client-testimonials {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .line {
+    border-bottom: 1px solid black; /* Creates a horizontal line */
+    margin: 10px 0;               /* Adds spacing above and below the line */
+}
+#sitemap{
+    margin-left: 10%;    
+}
+    #sitemap ul{
+        list-style-type: none;
+        margin-left: -30%;
+    }
+    .vertical-line {
+    height: 10; /* Length of the line */
+    width: 0;     /* No width, the border makes the line */
+    border-left: 2px solid #888; /* Style and color */
+    display: inline-block; /* Or block, flex, etc. */        /* Spacing around the line */
+}
+.client-testimony{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 200px;
+    font-size: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.jpg" alt="" height="50px" width="150px"></div> 
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Who We Work With</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p style="margin-left: 45px;">Calle de la Opción 20, Madrid, 28039</p>
+        </nav>
+    </header>
+    <main>
+        <h2>Who We Work With</h2>
+        <section id="who-we-work-with">
+            <div class="client">
+                <div class="company-logo"><img src="cocacola.webp" alt=""></div>
+                <div class="text">
+                    <h3>Coca-Cola</h3>
+                    <p>Steve Jobs - CEO</p>
+                    <p class="line"></p>
+                    <p>Neillian is id nibh sit amet ultrices vehicula. Donec et dolor id elit nibh sit amet ultrices vehicula. Donec et dolor id elit nibh sit amet ultrices vehicula.</p>
+                </div>
+            </div>
+            <div class="client">
+                <div class="company-logo"><img src="cocacola.webp" alt=""></div>
+                <div class="text">
+                    <h3>Coca-Cola</h3>
+                    <p>Steve Jobs - CEO</p>
+                    <p class="line"></p>
+                    <p>Neillian is id nibh sit amet ultrices vehicula. Donec et dolor id elit nibh sit amet ultrices vehicula. Donec et dolor id elit nibh sit amet ultrices vehicula.</p>
+                </div>
+            </div>
+            <div class="client">
+                <div class="company-logo"><img src="cocacola.webp" alt=""></div>
+                <div class="text">
+                    <h3>Coca-Cola</h3>
+                    <p>Steve Jobs - CEO</p>
+                    <p class="line"></p>
+                    <p>Neillian is id nibh sit amet ultrices vehicula. Donec et dolor id elit nibh sit amet ultrices vehicula. Donec et dolor id elit nibh sit amet ultrices vehicula.</p>
+                </div>            </div>
+            <div class="client">
+                <div class="company-logo"><img src="cocacola.webp" alt=""></div>
+
+                <div class="text">
+                    <h3>Coca-Cola</h3>
+                    <p>Steve Jobs - CEO</p>
+                    <p class="line"></p>
+
+                    <p>Neillian is id nibh sit amet ultrices vehicula. Donec et dolor id elit nibh sit amet ultrices vehicula. Donec et dolor id elit nibh sit amet ultrices vehicula.</p>
+                </div>            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="sitemap">
+            Site map
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Who We Work</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="client-testimony">
+            <h2>Client Testimonials</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p><i>Thomas Shelby, <br>CEO winter foods</i></p>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="maps"><img src="googlemap.jpg" alt=""></div> 
+        <div class="contact">
+            <p><i>Where are we?</i></p>
+            <p>Calle de la Opción 20, <br>28039<br> Madrid<br>Tel:91 756<br>Mobile:+34<br>info@r</p>
+        </div>
+    </footer>
+</body>
+</html>

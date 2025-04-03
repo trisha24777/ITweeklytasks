@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout with Positioning</title>
+    <style>
+    .container {
+        position: relative;
+        width: 400px;
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        /* Use Flexbox for header cells */
+        background-color: #f0f0f0; /* Light gray background */
+    }
+
+    .header div {
+        padding: 10px;
+        /* Increased padding */
+        text-align: center;
+        border-bottom: 2px solid black;
+        /* Thicker border */
+        font-weight: bold;
+        /* Bold text */
+    }
+
+    .column1-header {
+        width: 50%;
+        border: 2px solid black;
+
+    }
+
+    .column2-header,
+    .column3-header {
+        width: 23.5%;
+        border: 2px solid black;
+    }
+
+    .column1 {
+        position: absolute;
+        top: 45px;
+        /* Adjusted top to accommodate padding/border */
+        left: 0;
+        width: 42%;
+        height: 165px;
+        /* Adjusted height */
+        background-color: lightblue;
+        padding: 10px;
+        border: 2px solid black;
+    }
+
+    .column2 {
+        position: absolute;
+        top: 45px;
+        /* Adjusted top */
+        left: 48%;
+        width: 25%;
+        height: 50px;
+        /* Adjusted height */
+        background-color: yellow;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        font-size: 25px;
+        border: 2px solid black;
+    }
+
+    .column3 {
+        position: absolute;
+        top: 45px;
+        /* Adjusted top */
+        left: 73.5%;
+        width: 25%;
+        height: 50px;
+        /* Adjusted height */
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+
+        border: 2px solid black;
+
+    }
+
+    .column4 {
+        position: absolute;
+        top: 100px;
+        /* Adjusted top */
+        left: 48%;
+        width: 45.5%;
+        height: 110px;
+        /* Adjusted height */
+        background-color: green;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        border: 2px solid black;
+    }
+
+    ol,
+    ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    p {
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="column1-header">Column 1</div>
+            <div class="column2-header">Column 2</div>
+            <div class="column3-header">Column 3</div>
+        </div>
+        <div class="column1">
+            <p>A numbered list:</p>
+            <ol>
+                <li>Able</li>
+                <li>Baker</li>
+                <li>Charlie</li>
+                <li>Delta</li>
+                <li>Echo</li>
+            </ol>
+        </div>
+        <div class="column2">
+            <p style="margin-right: 10px;">B</p>
+        </div>
+        <div class="column3">
+            <p>C</p>
+        </div>
+        <div class="column4">
+            <p>An unnumbered list:</p>
+            <ul>
+                <li>Pounds</li>
+                <li>Dollars</li>
+                <li>Euro</li>
+                <li>Yen</li>
+                <li>Roubles</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
